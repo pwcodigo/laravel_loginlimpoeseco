@@ -17,4 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', AuthController::class,'dashboard');
+Route::get('dashboard',[AuthController::class,'dashboard']);
+Route::get('login',[AuthController::class,'showForm']);
+Route::post('login',[AuthController::class,'login']);
+Route::get('logout',[AuthController::class,'logout']);
