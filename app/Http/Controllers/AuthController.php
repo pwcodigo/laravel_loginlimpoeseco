@@ -10,7 +10,7 @@ class AuthController extends Controller
         return view ('dashboard');
     }
 
-    public function login(){
+    public function showForm(){
         return view('adm.login');
     }
 }
