@@ -1,3 +1,14 @@
+## Projeto 
+Criando rotas de login e logout com lavavel limpo e seco sem complementos externos apenas usando  o laravel.
+
+## Tecnologia
+    - [PHP](https://www.php.net/)
+    - [HTML](https://www.w3schools.com/html/)
+    - [CSS](https://www.w3schools.com/css/)
+    - [LARAVEL](https://laravel.com/)
+    
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
