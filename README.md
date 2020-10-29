@@ -2,10 +2,10 @@
 Criando rotas de login e logout com lavavel limpo e seco sem complementos externos apenas usando  o laravel.
 
 ## Tecnologia
-    - [PHP](https://www.php.net/)
-    - [HTML](https://www.w3schools.com/html/)
-    - [CSS](https://www.w3schools.com/css/)
-    - [LARAVEL](https://laravel.com/)
+   - [PHP](https://www.php.net/)
+   - [HTML](https://www.w3schools.com/html/)
+   - [CSS](https://www.w3schools.com/css/)
+   - [LARAVEL](https://laravel.com/)
     
 
 
