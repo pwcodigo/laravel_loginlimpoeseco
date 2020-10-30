@@ -28,14 +28,14 @@
                     </div>
                     <div class="mt-2">
                         <label class="block text-sm text-white" for="password">Senha</label>
-                        <input class="w-full px-5 py-1 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white" type="password" required>
+                        <input class="w-full px-5 py-1 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white" type="password" placeholder="digite a sua senha" required>
                     </div>
 
                     <div class="mt-4 items-center flex justify-between">
                         <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 hover:bg-gray-800 rounded" type="submit">Entrar</button>
                     </div>
                     <div class="text-center">
-                        <a class="inline-block right-0 align-baseline font-light text-sm text-500 hover:text-red-300">Criar uma conta</a>
+                        <a class="inline-block right-0 align-baseline font-light text-sm text-500 text-white hover:text-red-300">Criar uma conta</a>
                     </div>
                </form>
            </div>
