@@ -8,7 +8,41 @@ Criando rotas de login e logout com lavavel limpo e seco sem complementos extern
    - [LARAVEL](https://laravel.com/)
     
 
+## Fazer funcionar
 
+   Utilize qualquer um dos comando para instalar dependências, não esqueça de instalar o composer e o php. Pode baixar xampp se tiver usando
+   o windows.
+   ```
+      composer update 
+   ```
+   ou 
+   ```
+      composer install
+   ```
+
+   Após isso use o comando dentro da aplicação do laravel
+   ```
+      php artisan key:generate
+   ```
+
+   Depois esse, pois o comando abaixo vai inserir as informações no banco de dados através das migratios, não esqueça de criar o arquivo .env com as configurações do seu banco de dados.
+   ```
+    php artisan migrate:fresh
+   ```
+
+   Depois crie um usuário manualmente, usando o seed
+   ```
+       \App\Models\User::factory(10)->create([
+            "email" => "pwcodigo@gmail.com",
+            "password" => bcrypt('pwcodigo123')
+         ]);
+   ```
+
+   Depos sua aplicação
+   ```
+      php artisan serve
+   ```
+   
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">

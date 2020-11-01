@@ -18,17 +18,26 @@
     <div class="container mx-auto h-full flex flex-1 justify-center items-center">
         <div class="w-full max-w-lg">
            <div class="leading-loose">
-               <form class="max-w-sm m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">
+               <form action="{{ route('login') }}" method="post" class="max-w-sm m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">
+                   @csrf
                     <p class="text-white font-medium text-center text-lg font-bold">
                         Connect Plus
                     </p>
+                    @if($errors)
+                        @foreach($errors->all() as $error)
+                            <div class="flex items-center bg-red-500 text-white text-md font-light px-4 py-3" role="alert">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <p>{{ $error }} </p>
+                            </div>
+                        @endforeach
+                    @endif
                     <div class="">
-                        <label class="block text-sm text-white" for="email">E-mail</label>
-                        <input class="w-full px-5 py-1 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white" type="email" id="email" placeholder="digite o seu e-mail" required>
+                        <label class="block text-sm text-white" for="">E-mail</label>
+                <input type="email" value="{{ old('email')}}" name="email" class="w-full px-5 py-1 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white"   placeholder="digite o seu e-mail"  required>
                     </div>
                     <div class="mt-2">
-                        <label class="block text-sm text-white" for="password">Senha</label>
-                        <input class="w-full px-5 py-1 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white" type="password" placeholder="digite a sua senha" required>
+                        <label class="block text-sm text-white" for="">Senha</label>
+                        <input type="password" name="password" class="w-full px-5 py-1 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white"  placeholder="digite a sua senha" required>
                     </div>
 
                     <div class="mt-4 items-center flex justify-between">
